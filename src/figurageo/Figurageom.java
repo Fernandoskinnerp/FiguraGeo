@@ -9,10 +9,9 @@ package figurageo;
  *
  * @author Estudiantes
  */
-public abstract class Figurageom {
-    
-    abstract public String CalcularArea();
-     abstract public String CalcularPerimetro();
-     
+abstract public class Figurageom {
+    abstract double CalculoArea();
+    abstract double CalculoPerimetro();
     
 }
+

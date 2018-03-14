@@ -9,17 +9,31 @@ package figurageo;
  *
  * @author Estudiantes
  */
-public class Triangulo  extends Figurageom {
-  float base,altura;
-  
+public class Triangulo extends Figurageom {
+
+    float base, altura;
+    private float perimetro,area;
+
+     
     @Override
-    float calcularArea() {
-      return (base*altura)/2;
+    double CalculoArea() {
+        area = (base*altura)/2;
+        return area;
+        
     }
 
     @Override
-    float calcularPerimetro() {
-       return base*3;
+    double CalculoPerimetro() {
+         perimetro = base*3;
+        return perimetro;
+        
+        
+    }
+    void setBase(float Dato) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setLado(float Dato) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
-    

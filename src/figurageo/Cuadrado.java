@@ -11,14 +11,26 @@ package figurageo;
  */
              
 public class Cuadrado extends Figurageom {
-  float base,altura;
+  
+    float lado;
+    private float area,perimetro;
+  
+    
+
     @Override
-    float calcularArea() {
-         return base*altura;   
+    double CalculoArea() {
+         area= lado*lado;
+        return area;
+       
     }
 
     @Override
-    float calcularPerimetro() {
-          return (base*2)+(altura*2);
+    double CalculoPerimetro() {
+ perimetro = lado*4;
+        return perimetro;
+        
+    }
+    void setlado(float Dato) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
 }
 }

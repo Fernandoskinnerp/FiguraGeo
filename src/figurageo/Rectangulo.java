@@ -11,19 +11,26 @@ package figurageo;
  */
 public class Rectangulo extends Figurageom {
 
-    float base,altura;
-    
-    float calcularArea() {
-    return base*altura;    
-    }
-
-  
-    float calcularPerimetro() {
-        return (base*2)+(altura*2);
-    }
+    float ladoa, ladob;
+    private float area, perimetro;
 
    
+    @Override
+    double CalculoArea() {
+        area = ladoa * ladob;
+        return area;
+    
+    }
+
+    @Override
+    double CalculoPerimetro() {
+perimetro = (ladoa*2) + (ladob*2);
+        return perimetro;
+        
+    }
+
+}
+
 
     
     
-}
